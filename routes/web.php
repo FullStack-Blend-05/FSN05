@@ -20,4 +20,4 @@ Route::get('/checkout', 'PaginasController@checkout');
 // Mostrar a store
 Route::get('/produtos', 'PaginasController@store');
 // Mostrar o produto
-Route::get('/produto/{id}', 'PaginasController@show');
+Route::get('/produto', 'PaginasController@show');

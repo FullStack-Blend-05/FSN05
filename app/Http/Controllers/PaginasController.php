@@ -22,7 +22,7 @@ class PaginasController extends Controller
     }
     
     // Mostrar a show produto
-    public function show($id){
+    public function show(){
         return view('product');
     }
 }
