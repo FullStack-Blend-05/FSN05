@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Produto extends Model
 {
-    public function produtos()
+    public function categoria()
     {   //relação 1:n
-        return $this->hasMany('App\Produto','categoria_id');
+        return $this->belongsTo('App\Categoria');
     }
 }

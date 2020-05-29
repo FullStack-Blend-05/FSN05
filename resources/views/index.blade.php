@@ -1,4 +1,4 @@
-@extends('layouts.master');
+@extends('layouts.master')
 
 @section('content')
 <!-- SECTION  3 PRODUTOS-->
@@ -67,25 +67,30 @@
 					<h3 class="title">Novidades</h3>
 				</div>
 			</div>
-			@foreach($produtos as $p)
+			@foreach($produtos as $produto)
 			<!-- PRODUTO -->
 			<div class="col-md-3 col-xs-6">
 				<div class="product">
 					<div class="product-img">
-						<img src="./img/product01.png" alt="">
+						<img src="{{ $produto->img }}" alt="">
 						<div class="product-label">
-							<span class="sale">-30%</span>
+							<span class="sale">-10%</span>
 						</div>
 					</div>
 					<div class="product-body">
-						<p class="product-category">Category</p>
-						<h3 class="product-name"><a href="#">product name goes here</a></h3>
-						<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+						<p class="product-category">{{ $produto->categoria->nome }}</p>
+						<h3 class="product-name"><a href="#">{{ $produto->nome }}</a></h3>
+						<h4 class="product-price">R$ {{ number_format($produto->preco, 2, ',', '.') }} <del class="product-old-price">R$ {{ number_format($produto->preco * 1.1, 2, ',', '.') }}</del></h4>
 						<div class="product-rating">
 						</div>
 						<div class="product-btns">
 							<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-							<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+							<button class="quick-view">
+								<a href="/produto/{{ $produto->id }}">
+									<i class="fa fa-eye"></i>
+									<span class="tooltipp">Ver detalhes</span>
+								</a>
+							</button>
 						</div>
 					</div>
 					<div class="add-to-cart">
