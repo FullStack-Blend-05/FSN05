@@ -67,11 +67,7 @@
 					<h3 class="title">Novidades</h3>
 				</div>
 			</div>
-<<<<<<< HEAD
 			@foreach($produtos as $p)
-=======
-
->>>>>>> d0e8561d579412b12b5798da548a9534a4f14756
 			<!-- PRODUTO -->
 			<div class="col-md-3 col-xs-6">
 				<div class="product">
@@ -98,11 +94,7 @@
 				</div>
 			</div>
 			<!-- /product -->
-<<<<<<< HEAD
 			@endforeach
-=======
-
->>>>>>> d0e8561d579412b12b5798da548a9534a4f14756
 
 		</div>
 		<!-- /row -->
@@ -203,6 +195,4 @@
 	<!-- /container -->
 </div>
 <!-- /Section -->
-
-
 @endsection
