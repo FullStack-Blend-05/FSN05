@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>Electro - HTML Ecommerce Template</title>
+	<title>FSN05 - HTML Ecommerce Template</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
@@ -50,7 +50,7 @@
 				</ul>
 				<ul class="header-links pull-right">
 					<li><a href="#"><i class="fa fa-dollar"></i> BRL</a></li>
-					<li><a href="#"><i class="fa fa-user-o"></i> Minha Conta</a></li>
+					<li><a href="{{ route('login') }}"><i class="fa fa-user-o"></i> Minha Conta</a></li>
 				</ul>
 			</div>
 		</div>
